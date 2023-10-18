@@ -1,0 +1,554 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100%;
+}
+
+/*Aqui inician los estilos de la barra de navegacion
+y del encabezado de la pagina principal*/
+
+header {
+    background-color: #142335;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    padding: 5px 10%;
+    position: fixed;
+}
+
+.header .logo {
+    width: 115px;
+    cursor: pointer;
+}
+
+.header .logo img {
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover {
+    transform: scale(1.1);
+}
+
+ul  {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0%;
+}
+
+.header .navlinks {
+    list-style-type: none;
+}
+
+.header .navlinks li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .navlinks li:hover {
+    transform: scale(1.5);
+}
+
+.header .navlinks a {
+    font-size: 700;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+button {
+    transition: all 0.5s;
+    font-size: 17px;
+    padding: .5ch 1ch;
+    background-color: white;
+    color: #000;
+    font-family: Roboto, sans-serif;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 2px 2px 0px hsl(0, 0%, 90%),
+      4px 4px 0px hsl(0, 0%, 80%),
+      6px 6px 0px hsl(0, 0%, 70%),
+      8px 8px 0px hsl(0, 0%, 60%),
+      10px 10px 0px hsl(0, 0%, 50%),
+      12px 12px 0px hsl(0, 0%, 40%),
+      14px 14px 0px hsl(0, 0%, 30%),
+      16px 16px 0px hsl(0, 0%, 20%),
+      18px 18px 0px hsl(0, 0%, 10%);
+  }
+
+button:hover {
+    cursor: pointer;
+    background-color: hsl(231, 41%, 55%);
+    color: #fff;
+    box-shadow: none;
+  }
+
+/*Encabezado*/
+
+.main-container {
+    display: flex;
+    height: 700px;
+    width: 100%;
+    background-color: white;
+}
+
+
+#mainheaderimagen {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.trans {
+    margin-left: 15%;
+    margin-top: 15%;
+    padding-bottom: 0%;
+    font-size: 4em;
+    color: rgb(0, 0, 0);
+}
+/*
+@keyframes typing {
+    from {width: 0}
+    to {width: 100%}
+}
+
+@keyframes blink-caret {
+    from, to {border-color: transparent}
+    50% {border-color: black}
+}*/
+
+
+
+/*Aqui termina encabezado*/
+
+h2 {
+    color: azure;
+    font-size: 3.5em;   
+}
+
+/*Seccion de apps*/
+
+.apps{
+    background-color: #142335;
+    width: 100%;
+    height: 600px;
+}
+
+.fases {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.fases div {
+    margin: 10%;
+    margin: 2px;
+    width: 310px;
+    height: 310px;
+    border-radius: 100%;
+    background-color: rgb(195, 206, 201);
+}
+
+.fases .idea {
+    margin-right: 15%;
+}
+
+.fases #ideavideo {
+    width: 290px;
+    height: 290px;
+    border-radius: 100%;
+}
+
+.fases  .codigo {
+    margin-right: 15%;
+}
+
+.fases #codigovideo {
+    width: 290px;
+    height: 290px;
+    border-radius: 100%;
+}
+
+.fases .negocio {
+    margin-right: 15px;
+}
+
+.fases #negociovideo {
+    width: 290px;
+    height: 290px;
+    border-radius: 100%;
+    
+}
+
+.titleapps {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15%;
+    margin-bottom: 15px;
+    text-shadow: 2px 0px 3px black;
+    background-color: transparent;
+
+}
+
+#desarrollo {
+    font-size: 180%;
+    margin-bottom: 10px;
+    text-align: right;
+    margin-right: 7%;
+    color: rgb(255, 254, 254);
+    font-size: 2sem;
+}
+
+/*Termina seccion de apps*/
+/*Inicia seccion de Internet of things*/
+
+.iot {
+    width: 100%;
+    height: 680px;
+    background-color: rgb(254, 255, 255);
+    box-shadow: 2px 2px 2px #000;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.headeriot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iot h2 {
+    text-align: left;
+    margin-left: 50px;
+    margin-right: 0;
+    text-shadow: 2px 2px 3px black;
+}
+
+#controla {
+    font-size: 1.8em;
+}
+
+.iotcontainer {
+    display: flex;  
+    flex-direction: row;   
+    width: 100%;
+    height: max-content;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.worldiot {
+    padding-bottom: 5%;
+    width: 460px;
+    height: 460px;
+    margin: 0;
+}
+
+.cityiot {
+    padding-top: 5%;
+    width: 460px;
+    height: 460px;
+}
+
+.farmingiot {
+    padding-bottom: 5%;
+    width: 460px;
+    height: 460px;
+}
+
+/*.toggle {
+    --bg-toggle: hsl(0, 0%, 65%);
+    --bg-circle: hsl(96, 85%, 34%);
+    width: 200px;
+    height: 100px;
+    background-color: var(--bg-toggle);
+    box-shadow: 0 .3rem .9rem 0 rgba(125, 125, 125, 0.25);
+    border-radius: 4rem;
+    display: flex;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    align-items: center;
+    padding: 0 .3rem;
+    transition: background-color 400ms;
+  }
+  
+  .toggle__circle {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    background-color: var(--bg-circle);
+    border: solid grey;
+    border-radius: 50%;
+    position: relative;
+    transition: margin 400ms ease-in-out, background-color 1000ms;
+  }
+  
+  .toggle__circle::after,
+  .toggle__circle::before {
+    content: '';
+    position: absolute;
+    background-color: var(--bg-toggle);
+    bottom: 118%;
+    transform-origin: bottom left;
+  }
+  
+  .toggle__circle::before {
+    width: 30px;
+    height: 30px;
+    left: 32%;
+    border-radius: 0% 100% 0% 100% / 0% 27% 73% 100%;
+    transform: translateX(-70%) rotate(-1deg);
+  }
+  
+  .toggle__circle::after {
+    width: 30px;
+    height: 45px;
+    left: 50%;
+    border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
+    transform: rotate(15deg);
+  }
+  
+  #checkbox:checked + .toggle > .toggle__circle {
+    margin-left: calc(170px - (.3rem * 2) - 50px);
+  }
+  
+  #checkbox:checked + .toggle {
+    --bg-toggle: hsl(96, 85%, 34%);
+    --bg-circle: hsl(0, 0%, 96%);
+  }
+*/
+
+
+/*Termina seccion de iot*/
+/*Inicia seccion de Web*/
+
+.web {
+    width: 100%;
+    height: 600px;
+    background-color: #142335;
+}
+
+.pages {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+    box-shadow:1px 1px 1px black;
+    margin-right: 2%;
+    border-radius: 2px;
+}
+
+.webicon {
+    margin-top: 12%;
+     width: 100px;
+     height: 100px;
+}
+
+.pages > div {
+    background-color: rgb(255, 255, 255);
+    width: 20%;
+    height: 480px;
+}
+
+.pages  h3 {
+    font-size: 1.5em;
+    padding-top: 9%;
+}
+
+.web h2 {
+    text-align: right;
+    margin-right: 10%;
+    margin-bottom: .2%;
+    text-shadow: 2px 0px 3px black;
+}
+
+.txtweb {
+    color: grey;
+    padding-top: 42px;
+    font-size: 1.20rem;
+    text-align: center;
+    line-height: 38px;
+}
+
+#creamos {
+    text-align: right;
+    margin-right: 10%;
+    margin-bottom: 1.5%;
+    font-size: 180%;
+    color: #fff;
+    text-shadow: 2px 2px 3px black;
+}
+
+/*Termina seccion de Web*/
+/*Inicia seccion de talleres*/
+
+.talleres {
+    width: 100%;
+    height: 660px;
+    background-color: rgba(204, 226, 238, 0.993);
+}
+
+.talleres h2 {
+    text-align: left;
+    padding-top: 6%;
+    margin-left: 10%;
+    text-shadow: 2px 2px 3px black;
+}
+
+#taller {
+    font-size: 180%;
+    text-align: left;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 10%;
+}
+
+.sitiostalleres  {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cardtaller {
+    max-width: 80%;
+    width: 30em;
+    cursor: pointer;
+    border-radius: 4.2%;
+    background-color: rgb(191, 195, 216);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 10px 10px 10px 0px rgba(32, 32, 36, 0.12);
+    transition: all 0.35s ease;
+}
+
+.cardtaller::before  .cardtaller::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: orange;
+    height: 4px;
+}
+
+.cardtaller::before {
+    width: 0;
+    opacity: 0;
+    transition: opacity 0 ease, width 0 ease;
+    transition-delay: 0.5s;
+}
+
+.cardtaller::after {
+    width: 100%;
+    background: white;
+    transition: width 0.5 ease;
+}
+
+.cardtaller:hover {
+    width: 24em;
+    box-shadow: 0 10px 20px 0 rgba(32, 32, 36, 0.12);
+}
+
+.cardtaller .content {
+    width: 10em;
+    max-width: 80%;
+}
+
+.cardtaller .icon .invenceicon{
+    margin: 0 0 1em;
+    width: 10.625em;
+    transition: all 0.35s ease;
+}
+
+.icon {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+   
+.invenceicon {
+    width: 355px;
+    height: 200px;
+}
+
+.cardtaller .description {
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 2ox;
+}
+
+/*Termina seccion de talleres*/
+/*Inicia seccion de proyectos*/
+
+.proyectos {
+    background-color: #ffffff;
+
+}
+
+.card-proyectos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 150px);
+    justify-items: center;
+}
+
+.card-proyectos img {
+    height: 95px;
+    
+}
+
+.proyectos h2 {
+    text-align: right;
+    margin-right: 10%;
+    text-shadow: 2px 0px 3px black;
+}
+
+#proyecto {
+    font-size: 180%;
+    text-align: right;
+    margin-right: 10%;
+}
+
+
+/*Termina seccion de productos*/
+
+/*Pie de pagina*/
+
+footer h4 {
+    font-size: 2.1em;
+    border-top: 1px solid black;
+}
+
+/*Querys*/
+
+@media screen and (max-width: 900px) {
+	
+}
+
+@media screen and (max-width: 700px) {
+	
+}
+
+@media screen and (max-width: 600px) {
+
+}
