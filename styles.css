@@ -216,7 +216,6 @@ h2 {
 .iot {
     width: 100%;
     height: 680px;
-    background-color: rgb(254, 255, 255);
     box-shadow: 2px 2px 2px #000;
     display: flex;
     justify-content: space-around;
@@ -429,16 +428,19 @@ h2 {
 .cardtaller {
     max-width: 80%;
     width: 30em;
+    height: 280px;
+    margin-top: 40px;
     cursor: pointer;
-    border-radius: 4.2%;
-    background-color: rgb(191, 195, 216);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     position: static;
-    box-shadow: 10px 10px 10px 0px rgba(32, 32, 36, 0.12);
     transition: all 0.35s ease;
+    border-radius: 21px;
+    background: linear-gradient(315deg, #96a1a1, #c1fffa);
+    box-shadow:  -15px -15px 30px #5c7977,
+             15px 15px 30px #ffffff;
 }
 
 .cardtaller::before  .cardtaller::after {
@@ -494,9 +496,8 @@ h2 {
 }
    
 .invenceicon {
-    width: 300px;
+    width: 320px;
     height: 200px;
-    
 }
 
 .description {
