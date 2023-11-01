@@ -401,7 +401,7 @@ h2 {
 .talleres {
     width: 100%;
     height: 660px;
-    background-color: rgba(204, 226, 238, 0.993);
+    background-color: rgba(227, 229, 230, 0.993);
 }
 
 .talleres h2 {
@@ -438,8 +438,7 @@ h2 {
     position: static;
     transition: all 0.35s ease;
     border-radius: 21px;
-    background: linear-gradient(315deg, #96a1a1, #c1fffa);
-    box-shadow:  -15px -15px 30px #5c7977,
+    box-shadow:  -15px -15px 30px #646464,
              15px 15px 30px #ffffff;
 }
 
@@ -451,6 +450,20 @@ h2 {
     width: 100%;
     background-color: orange;
     height: 4px;
+}
+
+.arduinofondo {
+    background-image: url(talleres/arduinofondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; 
+}
+
+.tallerfondo {
+    background-image: url(talleres/tallerfondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;  
 }
 
 .cardtaller::before {
@@ -496,7 +509,7 @@ h2 {
 }
    
 .invenceicon {
-    width: 320px;
+    width: 350px;
     height: 200px;
 }
 
@@ -513,7 +526,6 @@ h2 {
 
 .proyectos {
     background-color: #ffffff;
-
 }
 
 .card-proyectos {
@@ -538,6 +550,7 @@ h2 {
     font-size: 180%;
     text-align: right;
     margin-right: 10%;
+    margin-bottom: 4%;
 }
 
 
