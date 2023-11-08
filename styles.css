@@ -353,7 +353,7 @@ h2 {
     margin-right: 2%;
     border-radius: 2px;
 }
-
+  
 .webicon {
     margin-top: 12%;
      width: 100px;
@@ -514,7 +514,8 @@ h2 {
 }
 
 .description {
-    color: rgb(0, 0, 0);
+    background-color: white;
+    color: rgb(7, 6, 7);
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -558,9 +559,35 @@ h2 {
 
 /*Pie de pagina*/
 
+footer {
+    background-color: rgba(227, 229, 230, 0.993);
+}
+
+.invencefoot {
+    width: 150px;
+    height: 80px;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+.socialmedia {
+    justify-content: right;
+    margin-top: 10px;
+    margin-left: 140px;
+}
+
+.socialicon {
+    width: 40px;
+    height: 40px;
+}
+
+.privacy {
+
+}
+
 footer h4 {
     font-size: 2.1em;
-    border-top: 1px solid black;
+    
 }
 
 /*Querys*/
