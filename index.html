@@ -15,7 +15,7 @@
     <body>
         <header class="header">
             <div class="logo">
-                <img src="logoinvence.png" href="index.html" alt="logoinvence">
+                <a href="#start"><img src="logoinvence.png" alt="logoinvence"></a>
             </div>
              <nav>
                 <ul class="navlinks">
@@ -23,20 +23,19 @@
                     <li><a href="#iot">IoT</a></li>
                     <li><a href="#web">WEB</a></li>
                     <li><a href="#talleres">TALLERES</a></li>
-                    <li><a href="#productos">PRODUCTOS</a></li>
                     <li><button type="button" href="#contacto"><strong>Contacto</strong></button></li>
                 </ul>
             </nav>
         </header>
-        <main >
-            <div class="main-container">
+        <main>
+            <div class="main-container" id="start">
             <h1 class="trans">Transformamos<br>
                     tus ideas <br>
                     en codigo;</h1>
                     <img id="mainheaderimagen" src="mainheader-background.png" alt="neuronal-web"/>
             </div>
         </main>
-        <section class="apps">
+        <section class="apps" id="apps">
             <h2 class="titleapps">apps</h2>
             <h3 id="desarrollo">Desarrollamos la aplicacion adecuada <br>
                 para tu proyecto o negocio</h3>
@@ -46,7 +45,7 @@
             <div class="negocio"><video id="negociovideo" src="animations/bussines.mp4" type="video/mp4" muted loop autoplay></video></div>
             </div>
         </section>
-        <section class="iot">
+        <section class="iot" id="iot">
         <div class="headeriot">
             <h2>internet of things</h2>
             <h3 id="controla">Controla tu hogar desde tu dispositivo</h3>
@@ -61,7 +60,7 @@
                 <video class="worldiot videoiot" src="animations/worldiot.mp4" type="video/mp4" autoplay loop muted ></video>
             </div>
         </section> 
-        <section class="web">
+        <section class="web" id="web">
             <h2>web</h2>
             <h3 id="creamos">Creamos la pagina que necesitas</h3>
             <div class="pages">
@@ -70,7 +69,7 @@
             <div class="card"><img class="webicon" src="web/homeicon.png"><h3>Conecta & Emprende</h3><p class="txtweb">Conecta tu ambiente laboral con tus aplicaciones, tus programas de escritorio y aplicaciones web para facilitar tu trabajo.</p></div>
             </div>
         </section>
-        <section class="talleres">
+        <section class="talleres" id="talleres">
             <h2>talleres</h2>
             <h3 id="taller">Compartimos nuestra experiencia</h3>
             <div class="sitiostalleres">
@@ -89,7 +88,7 @@
             </div>
             </div>
         </section>
-        <section class="proyectos">
+        <section class="proyectos" id="proyectos">
             <h2>Clientes</h2>
             <h3 id="proyecto">Conoce nuestros proyectos desarrollados</h3>
             <div class="card-proyectos">
@@ -101,19 +100,31 @@
                 <img src="proyectoslogo/utclogo.png"      alt="Universidad Tecnologica de Coahuila" />
             </div>
         </section>
-        <footer class="contacto">
-            <img class="invencefoot" src="logoinvenceblack.png" type="image/x-icon">
+        <footer class="contacto" id="contacto">
+        <div class="pie">
             <div class="socialmedia">
+            <img class="invencefoot" src="logoinvenceblack.png" type="image/x-icon">
             <div>
-            <img class="socialicon" src="footer/facebookicon.png" alt="Facebook pagina">
-            <img class="socialicon" src="footer/twittericon.png" alt="Twitter">
-            <img class="socialicon" src="footer/youtubeicon.png" alt="Canal de Youtube">
-            <img class="socialicon" src="footer/linkedinicon.png" alt="Perfil LinkedIn">
+            <a href="https://www.facebook.com/ArduinoCenter" target="_blank"><img class="socialicon" src="footer/facebookicon.png" alt="Facebook pagina"></a>
+            <a href="https://twitter.com/INVENCE3" target="_blank"><img class="socialicon" src="footer/twittericon.png" alt="Twitter"></a>
+            <a href="https://www.youtube.com/channel/UCpPb2PUgrZC3NG-v4vnWHEw" target="_blank"><img class="socialicon" src="footer/youtubeicon.png" alt="Canal de Youtube"></a>
+            <a href="https://www.linkedin.com/company/invence-mx/" target="_blank"><img class="socialicon" src="footer/linkedinicon.png" alt="Perfil LinkedIn"></a>
+        </div>    
+        </div>
+            <div><p>Contacto</p>
+                <p>invence@invence.com.mx</p>
             </div>
-            <div><p>Contacto</p><p>invence@invence.com.mx</p></div>
+            <div>
+                <p>SUBSCRIBETE</p>
+                    <label for="email">
+                        <input type="email">
+                    </label>                    
             </div>
-            <p></p>
+        </div>
+            <div class="info">
             <a class="privacy" href="https://www.invence.com.mx/avisoprivacidad/AvisoPrivacidad_2020.pdf" target="_blank">Aviso de Privacidad</a>
+            <p>2023 INVENCE Todos los derechos reservados.</p>
+        </div>
         </footer>
     </body>
 </html>

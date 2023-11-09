@@ -559,21 +559,25 @@ h2 {
 
 /*Pie de pagina*/
 
-footer {
+.pie {
+    width: 100vw;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
     background-color: rgba(227, 229, 230, 0.993);
 }
 
 .invencefoot {
     width: 150px;
     height: 80px;
-    margin-left: 150px;
-    margin-top: 50px;
 }
 
 .socialmedia {
-    justify-content: right;
-    margin-top: 10px;
-    margin-left: 140px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
 }
 
 .socialicon {
@@ -581,8 +585,15 @@ footer {
     height: 40px;
 }
 
-.privacy {
+.downline {
+    
+    width: 100px;
+    height: 0;
+    border: solid black;
+}
 
+.info {
+    background-color: rgba(227, 229, 230, 0.993);
 }
 
 footer h4 {
