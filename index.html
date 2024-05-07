@@ -23,18 +23,21 @@
                     <li><a href="#iot">IoT</a></li>
                     <li><a href="#web">WEB</a></li>
                     <li><a href="#talleres">TALLERES</a></li>
-                    <li><button type="button" href="#contacto"><strong>Contacto</strong></button></li>
+                    <li><button class="button-contact" type="button" href=".contact-form"><strong>Contacto</strong></button></li>
                 </ul>
             </nav>
         </header>
-        <main>
+        <main id="main">
+            <!--Encabezado principal-->
             <div class="main-container" id="start">
             <h1 class="trans">Transformamos<br>
                     tus ideas <br>
                     en codigo;</h1>
-                    <img id="mainheaderimagen" src="mainheader-background.png" alt="neuronal-web"/>
+                    <!--<img id="mainheaderimagen" src="mainheader-background.png" alt="neuronal-web"/>-->
             </div>
         </main>
+        <!--Termina encabezado-->
+        <!--Seccion aplicaciones-->
         <section class="apps" id="apps">
             <h2 class="titleapps">apps</h2>
             <h3 id="desarrollo">Desarrollamos la aplicacion adecuada <br>
@@ -45,21 +48,24 @@
             <div class="negocio"><video id="negociovideo" src="animations/bussines.mp4" type="video/mp4" muted loop autoplay></video></div>
             </div>
         </section>
+        <!--Termina apps-->
+        <!---------------->
+        <!--Internet of things-->
         <section class="iot" id="iot">
         <div class="headeriot">
             <h2>internet of things</h2>
             <h3 id="controla">Controla tu hogar desde tu dispositivo</h3>
         </div>
-        <!--<input type="checkbox" name="check-toggle" id="checkbox" hidden="">
-        <label for="checkbox" class="toggle">
-            <div class="toggle__circle"></div>
-        </label> -->
         <div class="iotcontainer">
                 <video class="farmingiot videoiot" src="animations/farmingiot.mp4" type="video/mp4" autoplay loop muted ></video>            
                 <video class="cityiot videoiot" src="animations/cityiot.mp4" type="video/mp4" autoplay loop muted ></video>
                 <video class="worldiot videoiot" src="animations/worldiot.mp4" type="video/mp4" autoplay loop muted ></video>
+                <!--prueba <img  class="backiot" src="iot/backiot.jpg" / >-->
             </div>
         </section> 
+        <!--Termina IOT's-->
+        <!----------------->
+        <!--Seccion de Web-->
         <section class="web" id="web">
             <h2>web</h2>
             <h3 id="creamos">Creamos la pagina que necesitas</h3>
@@ -69,6 +75,9 @@
             <div class="card"><img class="webicon" src="web/homeicon.png"><h3>Conecta & Emprende</h3><p class="txtweb">Conecta tu ambiente laboral con tus aplicaciones, tus programas de escritorio y aplicaciones web para facilitar tu trabajo.</p></div>
             </div>
         </section>
+        <!--Termina seccion Web-->
+        <!----------------------->
+        <!--Inicia seccion de talleres-->
         <section class="talleres" id="talleres">
             <h2>talleres</h2>
             <h3 id="taller">Compartimos nuestra experiencia</h3>
@@ -88,6 +97,9 @@
             </div>
             </div>
         </section>
+        <!--Termina Talleres-->
+        <!-------------------->
+        <!--Proyectos desarrollados-->
         <section class="proyectos" id="proyectos">
             <h2>Clientes</h2>
             <h3 id="proyecto">Conoce nuestros proyectos desarrollados</h3>
@@ -100,6 +112,9 @@
                 <img src="proyectoslogo/utclogo.png"      alt="Universidad Tecnologica de Coahuila" />
             </div>
         </section>
+        <!--Finaliza Proyectos-->
+
+        <!--Pie de pagina-->
         <footer class="contacto" id="contacto">
         <div class="pie">
             <div class="socialmedia">
@@ -111,23 +126,34 @@
             <a href="https://www.linkedin.com/company/invence-mx/" target="_blank"><img class="socialicon" src="footer/linkedinicon.png" alt="Perfil LinkedIn"></a>
         </div>    
         </div>
+        <!--Formulario de contacto-->
+        <div class="contenedor-form">
+        <form class="contact-form">
+            <h2 class="contactanos">Contacto</h2>
+            <div class="input1">
+                <input class="campo-input" type="text" required/>
+            <label class="info-text">Nombre</label>
+            </div>
+            <div class="input1">
+                <input class="campo-input" type="email" required/>
+            <label class="info-text">Correo</label>
+        </div>
+        <div class="input1">
+                <input class="campo-input" type="number" required/>
+            <label class="info-text">Telefono</label>
+        </div>
+            <button class="enviar-form">Enviar</button>
+        </form>
+    </div>
             <div class="contact">
                 <p>Contacto</p>
                 <p>invence@invence.com.mx</p>
             </div>
-            <div class="subs">
-                <p>SUBSCRIBETE<br>
-                Agrega tu email <br>para enterarte de las ultimas soluciones y servicios.
-                </p>
-
-                    <label for="email">
-                        <input type="email">
-                    </label>                    
-            </div>
         </div>
         <div class="downline"></div>
             <div class="info">
-             <div>
+             <!--Registros-->
+                <div>
                 <img class="registros" src="footer/canaco.png" alt="Camara Nacional de Comercio">
                 <img class="registros" src="footer/duns.png" alt="Duns and Brad">
                 <img class="registro" src="footer/reniecyt.png" alt="Registro Nacional de Instituciones y Empresas Cientificas y Tecnologicas">
