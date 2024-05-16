@@ -68,6 +68,7 @@ ul  {
 .button-contact {
     transition: all 0.5s;
     font-size: 17px;
+    font-weight: bolder;
     padding: .5ch 1ch;
     background-color: white;
     color: #000;
@@ -94,27 +95,35 @@ ul  {
 
 /*Encabezado*/
 
-.main-container {
-    display: flex;
-    height: 700px;
-    width: 100%;
-}
-
-
-#main {
+.main {
     background-image: url(mainheader-background.png);
     background-size: cover;
     background-position: center;
     overflow: hidden;
-    
 }
 
-.trans {
-    margin-left: 15%;
-    margin-top: 15%;
-    padding-bottom: 0%;
+.main-container {
+    display: flex;
+    height: 600px;
+    width: 100%;
+}
+
+#trans{
+    padding-top: 15%;
+    padding-left: 10%;
+    animation: typewriter 4s steps(15) 1s infinite both,
+    blinkCursor 500ms steps (15);
     font-size: 4em;
-    color: rgb(0, 0, 0);
+    color: rgb(46, 37, 37);
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 214px;
+    }
 }
 
 
@@ -604,6 +613,7 @@ h2 {
 
 .contenedor-form {
     width: max-content;
+    border-radius: 10px;
     -webkit-box-shadow: 10px 10px 22px 0px rgba(0,0,0,0.32);
 -moz-box-shadow: 10px 10px 22px 0px rgba(0,0,0,0.32);
 box-shadow: 10px 10px 22px 0px rgba(0,0,0,0.32);
@@ -625,13 +635,13 @@ input {
     font-weight: 540;
     padding: .75rem;
     border: solid rgba(91, 104, 224, 0.459) 1px;
-    border-radius: 10git gtpx;
+    border-radius: 10px;
     box-shadow: 5px 10px 20px 10px rgba(#000000, .25);   
 }
 
 .info-text {
     position: absolute;
-    color: #358fb3;
+    color: #358fb36c;
     top: 1.5rem;
     transition: .25s ease;
 }

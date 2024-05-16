@@ -23,14 +23,14 @@
                     <li><a href="#iot">IoT</a></li>
                     <li><a href="#web">WEB</a></li>
                     <li><a href="#talleres">TALLERES</a></li>
-                    <li><button class="button-contact" type="button" href=".contact-form"><strong>Contacto</strong></button></li>
+                    <li><a href="#contenedor-form"><button class="button-contact" type="button">Contacto</button></a></li>
                 </ul>
             </nav>
         </header>
-        <main id="main">
+        <main class="main">
             <!--Encabezado principal-->
             <div class="main-container" id="start">
-            <h1 class="trans">Transformamos<br>
+            <h1 id="trans">Transformamos<br>
                     tus ideas <br>
                     en codigo;</h1>
                     <!--<img id="mainheaderimagen" src="mainheader-background.png" alt="neuronal-web"/>-->
@@ -127,26 +127,37 @@
         </div>    
         </div>
         <!--Formulario de contacto-->
-        <div class="contenedor-form">
-        <form class="contact-form">
+        <div class="contenedor-form" id="contenedor-form">
+        <form class="contact-form" action="https://formsubmit.co/eromsan0@gmail.com" method="POST">
             <h2 class="contactanos">Contacto</h2>
             <div class="input1">
-                <input class="campo-input" type="text" required/>
-            <label class="info-text">Nombre</label>
+                <input class="campo-input" type="text" name="name"  required/>
+            <label class="info-text" id="info-text" >Nombre</label>
             </div>
             <div class="input1">
-                <input class="campo-input" type="email" required/>
-            <label class="info-text">Correo</label>
+                <input class="campo-input" type="text" name="asunto"  required/>
+            <label class="info-text" id="info-text" >Asunto</label>
+            </div>
+            <div class="input1">
+                <input class="campo-input" type="email" name="email" required/>
+            <label class="info-text">Tu correo</label>
         </div>
-        <div class="input1">
-                <input class="campo-input" type="number" required/>
+        <!--<div class="input1">
+                <input class="campo-input" type="number" name="phone" required/>
             <label class="info-text">Telefono</label>
-        </div>
-            <button class="enviar-form">Enviar</button>
+        </div>-->
+            <button class="enviar-form" type="submit">Enviar</button>
+
+            <!--<input type="hidden" name="_captcha" value="false">-->
+
+            <input type="hidden" name="_autoresponse" value="Gracias por tu mensaje, nos comunicaremos en breve para resolver tus dudas">
+
+
+
         </form>
     </div>
             <div class="contact">
-                <p>Contacto</p>
+                <p>Contacto directo</p>
                 <p>invence@invence.com.mx</p>
             </div>
         </div>
