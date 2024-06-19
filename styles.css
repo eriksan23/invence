@@ -103,25 +103,53 @@ ul  {
 .main {
     background-image: url(mainheader-background.png);
     background-size: cover;
-    background-position: center;
-    overflow: hidden;
+    background-position: center 
 }
 
 .main-container {
     height: 600px;
-    width: 100%;
-    padding-top: 10%;
-    padding-left: 10%;
 }
 
-.trans p {
+.trans {
     font-weight: bold;
-    overflow: hidden;
-    white-space: nowrap;
     font-size: 4em;
-    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 10%;
+    padding-left: 2%;
+    padding-bottom: 0;
+    -webkit-animation: slide-top 1.2s ease-in-out both;
+	        animation: slide-top 1.2s ease-in-out both;
 }
 
+.desktop-guy  {
+    margin-top: 13%;
+    height: 350px;
+    width: 350px;
+}
+
+@-webkit-keyframes slide-top {
+    70% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    0% {
+      -webkit-transform: translateY(-100px);
+              transform: translateY(-100px);
+    }
+  }
+  @keyframes slide-top {
+    70% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    0% {
+      -webkit-transform: translateY(-100px);
+              transform: translateY(-100px);
+    }
+  }
 
 /*Aqui termina encabezado*/
 
@@ -660,8 +688,6 @@ footer h4 {
 
 /*Querys*/
 
-
-
 @media(max-width: 780px){
 
 .header {
@@ -735,6 +761,10 @@ main .main-container p {
 }
 
 /*Querys Animaciones-Videos*/
+
+.desktop-guy {
+    display: none;
+}
 
 .fases .idea {
     margin-top: 8%;
