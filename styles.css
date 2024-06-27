@@ -24,6 +24,7 @@ y del encabezado de la pagina principal*/
     width: 100%;
     padding: 5px 5%;
     position: fixed;
+    z-index: 1;
 }
 
 .header .logo {
@@ -50,7 +51,6 @@ ul  {
 
 .header .navlinks {
     list-style-type: none;
-
 }
 
 .header .navlinks li{
@@ -61,7 +61,6 @@ ul  {
 .header .navlinks li:hover {
     transform: scale(1.5);
     transition: 0.4s;
-
 }
 
 .header .navlinks a {
@@ -103,11 +102,11 @@ ul  {
 .main {
     background-image: url(mainheader-background.png);
     background-size: cover;
-    background-position: center 
+    background-position: center;
 }
 
 .main-container {
-    height: 600px;
+    height: 680px;
 }
 
 .trans {
@@ -131,7 +130,7 @@ ul  {
 }
 
 @-webkit-keyframes slide-top {
-    70% {
+    60% {
       -webkit-transform: translateY(0);
               transform: translateY(0);
     }
@@ -141,7 +140,7 @@ ul  {
     }
   }
   @keyframes slide-top {
-    70% {
+    60% {
       -webkit-transform: translateY(0);
               transform: translateY(0);
     }
@@ -686,9 +685,11 @@ footer h4 {
     
 }
 
+/*Footer*/
+
 /*Querys*/
 
-@media(max-width: 780px){
+@media(max-width: 800px){
 
 .header {
     display: flex;
@@ -700,9 +701,13 @@ footer h4 {
     display: none;
 }
 
+.main-container {
+    height: 450px;
+}
+
 main .main-container p {
     font-size: 3.2rem;
-    padding-top: 15%;
+    padding-top: 10%;
     display: block;
     width: 60%;
     margin: auto;
@@ -723,7 +728,6 @@ main .main-container p {
 
 .card .txtweb {
     display: none;
-
 }
 
 .description {
@@ -755,9 +759,14 @@ main .main-container p {
     display: none;
 }
 
+.contenedor-form {
+    margin-left: 12%;
+}
+
 .iconosredes {
+    margin-left: 95px;
     display: flex;
-    align-items: ;
+    flex-direction: column;
 }
 
 /*Querys Animaciones-Videos*/
