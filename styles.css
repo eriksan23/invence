@@ -690,11 +690,11 @@ footer h4 {
 
 /*Querys*/
 
-@media screen and (max-width: 1080px){
+@media screen and (max-width: 600px) {
 
 .header {
     display: flex;
-    max-width: 780px;
+    max-width: 600px;
     justify-content: center;
 }
 
@@ -714,46 +714,45 @@ main .main-container p {
     margin: auto;
 }
 
-.subtitle { 
-    display: flex;    
-    justify-content: center;
-    font-size: 2em;
-    width: 70%;
-    margin: auto;
+.seccion .subtitle { 
+    font-size: 50px;
 }
 
-.pages > div {
-    height: 300px;
+.seccion h3 {
+    font-size: 23px;
+}
+
+.pages .card {
+    height: 220px;
     width: 200px;
+    margin-bottom: 0px;
 }
 
 .card .txtweb {
     display: none;
 }
 
+.invenceicon {
+    width: 15em;
+    height: 10em;
+}
+
+.arduinoicon {
+    width: 11em;
+    height: 10.8em;
+}
+
 .description {
-    background-color: white;
-    color: rgb(7, 6, 7);
+    font-size: 12px;
     font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    white-space: nowrap;
+    
 }
 
 .cardtaller {
-    max-width: 50%;
-    width: 20em;
+    max-width: 45%;
+    width: 15em;
     height: 350px;
     margin-top: 40px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    position: static;
-    border-radius: 21px;
-    box-shadow:  -15px -15px 30px #646464,
-             15px 15px 30px #ffffff;
 }
 
 .invencefoot {
@@ -770,36 +769,53 @@ main .main-container p {
     flex-direction: column;
 }
 
+.card-proyectos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 9px;
+    grid-row-gap: 9px;
+}
+
+.contact {
+    display: none;
+}
+
 /*Querys Animaciones-Videos*/
 
 .desktop-guy {
     display: none;
 }
 
-.fases .idea {
-    margin-top: 8%;
-    width: 210px;
-    height: 210px;
+.fases {
+    width: 150px;
+    height: 150px;
+}
+
+.idea {
+    margin-top: 50%;
+    width: 195px;
+    height: 198px;
     border-radius: 100%;
     background-color: rgb(195, 206, 201);
 }
 
 .fases #ideavideo {
-    width: 200px;
-    height: 180px;
+    margin-top: 8%;
+    width: 185px;
+    height: 165px;
     border-radius: 100%;
 }
 
-.worldiot, .farmingiot {
-    padding-bottom: 2%;
-    width: 250px;
-    height: 250px;
+.iotcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.cityiot {
-    padding-top: 5%;
-    width: 250px;
-    height: 250px;
+.videoiot {
+    width: 280px;    
+    height: 280px;
 }
 
 }
