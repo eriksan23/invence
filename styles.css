@@ -837,6 +837,7 @@ main .main-container p {
     padding-right: 0%;
     font-size: .6em;
     margin: auto;
+    margin-left: 11%;
     }
 
     .seccion > .subtitle { 
@@ -844,7 +845,7 @@ main .main-container p {
     }
     
      #desarrollo, #creamos, #controla, #taller, #proyecto{
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 
     #apps {
